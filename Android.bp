@@ -480,7 +480,11 @@ cc_prebuilt_library_shared {
 
 cc_library_shared {
     name: "libui_shim",
-    shared_libs: ["libui"],
+    shared_libs: [
+        "libui",
+        "libsync",
+        "libutils",
+    ],
     srcs: [
         "libui/Fence.cpp",
         "libui/GraphicBuffer.cpp",
