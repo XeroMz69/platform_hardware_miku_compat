@@ -5,16 +5,23 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <openssl/base.h>
 =======
 #include <stdint.h>
 >>>>>>> 969158f (compat: Add libcrypto_shim)
+=======
+#include <openssl/base.h>
+>>>>>>> f029617 (compat: Add libcrypto_shim)
 
 // From <openssl/bytestring.h>
 struct cbs_st {
     const uint8_t* data;
     size_t len;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f029617 (compat: Add libcrypto_shim)
 
 #if !defined(BORINGSSL_NO_CXX)
     // Allow implicit conversions to and from bssl::Span<const uint8_t>.
@@ -30,12 +37,15 @@ struct cbs_st {
 #endif
 };
 
+<<<<<<< HEAD
 =======
 };
 
 typedef struct cbs_st CBS;
 
 >>>>>>> 969158f (compat: Add libcrypto_shim)
+=======
+>>>>>>> f029617 (compat: Add libcrypto_shim)
 void CBS_init(CBS* cbs, const uint8_t* data, size_t len) {
     cbs->data = data;
     cbs->len = len;
