@@ -400,6 +400,7 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
 }
 
+<<<<<<< HEAD
 cc_library {
     name: "libhidlbase_shim",
     srcs: [
@@ -411,6 +412,8 @@ cc_library {
     vendor: true,
 }
 
+=======
+>>>>>>> 44cd8cc (compat: Provide {libbinder,libhidlbase,libutils}-v32)
 cc_library {
     name: "libmemset_shim",
     target: {
@@ -480,6 +483,7 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
 }
 
+<<<<<<< HEAD
 cc_prebuilt_library_shared {
     name: "libutils-v33",
     vendor: true,
@@ -498,6 +502,8 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
 }
 
+=======
+>>>>>>> 44cd8cc (compat: Provide {libbinder,libhidlbase,libutils}-v32)
 cc_library_shared {
     name: "libui_shim",
     shared_libs: [
